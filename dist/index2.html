@@ -1,0 +1,65 @@
+<?php 
+ //Nous allons démarrer la session avant toute chose
+   session_start() ;
+  include("connexion.php");
+  
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dist/index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header> 
+    <div class="divlogo">
+        <img src="img/logo.png" alt="" class="logo">
+    </div>
+ <!--
+    <div class="icone">
+        
+        <a href="#" >
+            <img src="img/compte.png" alt="" class="compte">
+        </a>
+
+-->
+        <div class="icone">
+            <div class="divcompte">
+                <a href="#" >
+                    <img src="img/compte.png" alt="" class="compte">
+                </a>
+
+            </div>
+
+
+            <div class="divmenu">
+             <img src="img/menu.png" alt="" class="menu__btn" id="open_menu">
+              
+          
+              <ul class="menu__box" id="menu">
+                <button class= "close" id="close"><a href="#">&times;</a></button>
+                <li><a class="menu__item accueil" href="#">Accueil</a></li>
+                <li><a class="menu__item animations" href="#">Animations</a></li>
+                    <ul class="sous_menu">
+                        <li><a href="#" class="sous_menu__item evenement">Événement</a></li>
+                        <li><a href="#" class="sous_menu__item competition">Compétition</a></li>
+                        <li><a href="#" class="sous_menu__item calendrier">Calendrier</a></li>
+                    </ul>
+                <li><a class="menu__item multimedia" href="#">Multimédia</a></li>
+                <li><a class="menu__item documents" href="#">Documents</a></li>
+                <li><a class="menu__item partenaires" href="#">Partenaires</a></li>
+              </ul>
+            </div>
+        </div>
+  </header>
+   <div id="page-content">
+      <p>Page Content</p>
+   </div>
+    
+</body>
+</html>
